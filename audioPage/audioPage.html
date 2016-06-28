@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="./source/audioPage.css"> 
+<script src="./source/audioPage.js"></script>
+</head>
+
+<body>
+  
+<header>
+  <H1>My Demonstrated Web Page</H1>
+    <nav>
+        <a href="../demo3All.html">HOME</a>
+        <a href="./audioPage.html" style="background-color:green">AUDIO</a>
+        <a href="../animatPage/animatPage.html">ANIMATION</a>
+        <a href="../videoPage/videoPage.html">VIDEO</a>
+        <a href="../photoPage/photoPage.html">PHOTO</a>
+        <a href="../formPage/formPage.html">FORM</a>
+        <a href="../about/about.html">ABOUT</a>
+    </nav>
+</header>
+<section>
+  <h2>Audio Demo</h2>
+  <div> 
+    <img src="./source/musicBar.png" alt="banner picture" usemap="#banner"> 
+       <map name="banner">
+           <area shape="rect" coords="31,10,65,50" 
+                 onclick="songList('s1.mp3')"  
+                 alt="Hello" />
+           <area shape="rect" coords="74,10,106,50" 
+                 onclick="songList('s2.mp3')" 
+                 alt="True colors" />
+           <area shape="rect" coords="117,10,150,50" 
+                 onclick="songList('s3.mp3')"  
+                 alt="Right Here Waiting" />
+           <area shape="rect" coords="160,10,194,50" 
+                 onclick="songList('s4.mp3')"  
+                 alt="Take My Breath Away" />
+           <area shape="rect" coords="205,10,239,50" 
+                 onclick="songList('s5.mp3')"  
+                 alt="Sometimes When We Touch" />
+           <area shape="rect" coords="248,10,282,50" 
+                 onclick="songList('s6.mp3')"  
+                 alt="Can you feel the love tonight" />
+           <area shape="rect" coords="292,10,326,50" 
+                 onclick="songList('s7.mp3')" 
+                 alt="Don't know much" />
+           <area shape="rect" coords="336,10,369,50" 
+                 onclick="songList('s8.mp3')"  
+                 alt="Everything I Do" />
+           <area shape="rect" coords="380,10,413,50" 
+                 onclick="songList('s9.mp3')"  
+                 alt="Just the way you are" />
+           <area shape="rect" coords="423,10,457,50" 
+                 onclick="songList('s10.mp3')"
+                 alt="Those flowers" />
+           <area shape="rect" coords="467,10,490,50" 
+                 onclick="songList('s11.mp3')"
+                 alt="Little happiness">
+       </map>
+    </div> 
+
+    <p id="remain">Select one of the images above or buttons below to hear a track</p> 
+
+
+    <button onclick="songList('s1.mp3')">song1</button>
+    <button onclick="songList('s2.mp3')">song2</button>
+    <button onclick="songList('s3.mp3')">song3</button>
+    <button onclick="songList('s4.mp3')">song4</button>
+    <button onclick="songList('s5.mp3')">song5</button>
+    <button onclick="songList('s6.mp3')">song6</button>
+    <button onclick="songList('s7.mp3')">song7</button>
+    <button onclick="songList('s8.mp3')">song8</button>
+    <button onclick="songList('s9.mp3')">song9</button>
+  
+    <div>
+        <audio id="myAudio" autoplay controls src="./source/s1.mp3">
+            <source id="mp3_src" src="./source/s1.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <p id="songName">1.Hello</p>
+    <h3><b>Available Now!</b></h3>
+ </section>
+<footer>
+  <p>@copyright Wendy Xiao Oct, 2015 Demo Web Page</p>
+</footer>
+</body>
+</html>
+ 

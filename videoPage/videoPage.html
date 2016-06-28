@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="./source/videoPage.css"> 
+<script src="./source/videoPage.js"></script>
+</head>
+
+<body>
+  
+<header>
+  <H1>My Demonstrated Web Page </H1>
+    <nav>
+        <a href="../demo3All.html">HOME</a>
+        <a href="../audioPage/audioPage.html">AUDIO</a>
+        <a href="../animatPage/animatPage.html">ANIMATION</a>
+        <a href="./videoPage.html" style="background-color:green">VIDEO</a>
+        <a href="../photoPage/photoPage.html">PHOTO</a>
+        <a href="../formPage/formPage.html">FORM</a>
+        <a href="../about/about.html">ABOUT</a>
+    </nav> 
+</header>
+
+<section>
+  <h2>Video Demo</h2>
+  <div> 
+      <input type="range" id="videoSize"
+            min="64"
+            max="480"
+            step="5"
+            value="480"> 
+      <p id="pinp1"> Move the slider bar below to adjust the frame size</p>
+
+       <input type="range" id="videoTime"
+            min="0 "
+            max="35"
+            step="2"
+            value="0"> 
+       <p id="pinp2">Move the slider bar below to adjust the time stamp</p>
+     
+      <video id="theVideo" width="480" height="360" loop autoplay poster="./source/poster.png">
+       <source src="./source/demoMovie1.mp4" type="video/mp4">
+       Your browser does not support HTML5 video.
+      </video>
+    
+      <br><br> 
+      <button onclick="playPause()">Play/Pause</button> 
+      <br> 
+   </div> 
+   <h3><b>Available Now!</b></h3>
+</section>
+  
+<footer>
+  <p>@copyright Wendy  Xiao Oct, 2015 Demo Web Page</p>
+</footer>
+</body>
+</html>
+ 

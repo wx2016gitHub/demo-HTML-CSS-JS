@@ -1,0 +1,136 @@
+body{ 
+    width:100%;
+    height:100%;   
+    background-image: -webkit-radial-gradient(circle, antiquewhite, white );
+    background-image: radial-gradient(circle, antiquewhite, white );
+}
+ 
+header {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:150px; 
+    box-sizing:border-box;
+}
+ 
+header > h1 {
+    padding-top:10px;
+    text-align:center;  
+    font-family:Arial, Helvetica, sans-serif; 
+    font-weight:bold;  
+    color:darkgreen;
+    text-shadow: 1px 2px 3px gold;
+    white-space:nowrap; 
+    overflow:hidden;
+}
+
+header > nav {
+    position:absolute;
+    top:120px; 
+    left:0px;
+    width:100%;
+    height:30px;
+    background-color:darkgreen;
+    box-sizing:border-box;       
+}
+
+nav > a {
+     position:relative;
+     margin-left:3px;
+     padding-top:5px;
+     width:14%;
+     height:30px;
+     float:left;
+     display:block;
+     box-sizing:border-box;
+     text-align:center;
+     text-decoration:none;
+     font-weight:bold;
+     font-family:Arial, Helvetica, sans-serif; 
+     font-size:18px;
+     color:#FFFFFF;
+     background-color:darkgreen;
+     overflow:hidden;
+}
+ 
+nav a:hover { 
+    background-color:green;
+    color:#FFFFFF;
+    height:30px;
+}
+
+section {
+    display:block;
+    position:absolute;
+    top:150px;
+    left:0px;
+    width:100%;
+    height:600px;
+    background: url(../demoImg/simple.png) repeat;  
+  //  background: url(../demoImg/simple.png) repeat, url('wx2.jpg'); 92% 38% repeat;
+    background-origin:border-box;
+  
+    clear:both;
+    box-sizing:border-box;
+    opacity: 1;
+    overflow:hidden; 
+}
+
+div  {
+     position:relative;
+     top:60px;
+     height:470px;
+     margin-left:60px;
+     margin-right:60px;
+     border-radius:20px; 
+     border:5px solid #116622; 
+     background-color:rgb(254,250,240); 
+     background-image: url('wx2.jpg');
+     background-size:80px 100px;
+     background-repeat: no-repeat;
+     background-position:95% 10%;
+     background-attachment: scroll;
+     opacity: 0.9;
+     color:#000;
+}
+
+div > h2{ 
+    position:relative; 
+    margin-bottom:50px;  
+    text-align:left;
+    padding-top:40px;
+    padding-left:100px;
+    color:rgb(100,0,15);
+    text-shadow: 1px 1px 1px gold;
+    white-space:nowrap;
+    overflow:hidden;
+}
+div >span {
+    position:absolute; 
+    top:95%;
+    left:100px;
+    font-size:15px;
+    color:rgb(100,0,15);
+    text-shadow: 1px 0px 0px gold;
+    white-space:nowrap;
+    overflow:hidden;
+}
+div > P{
+    position:relative; 
+    margin-left:100px; 
+    font-size:17px;
+    color:#000;
+    text-shadow: 1px 0px 0px #009900;
+    white-space:nowrap;
+    line-height:25px;
+    overflow:hidden;
+}
+          
+footer > p {
+     position:absolute;
+     top:750px;
+     color:darkgreen;
+     font:15px Arial, Helvetica, sans-serif; 
+}
+/*@copyright Wendy Xiao Demo Web Page Oct, 2015    */

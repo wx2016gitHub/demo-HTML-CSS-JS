@@ -1,0 +1,144 @@
+body{ 
+    width:100%;
+    height:100%;   
+    background-image: -webkit-radial-gradient(circle, antiquewhite, white );
+    background-image: radial-gradient(circle, antiquewhite, white );
+}
+ 
+header {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:150px; 
+    box-sizing:border-box;
+}
+ 
+header > h1 {
+    padding-top:10px;
+    text-align:center;  
+    font-family:Arial, Helvetica, sans-serif; 
+    font-weight:bold;  
+    color:darkgreen;
+    text-shadow: 1px 2px 3px gold;
+    white-space:nowrap; 
+    overflow:hidden;
+}
+
+header > nav {
+    position:absolute;
+    top:120px; 
+    left:0px;
+    width:100%;
+    height:30px;
+    background-color:darkgreen;
+    box-sizing:border-box;       
+}
+
+nav > a {
+     position:relative;
+     margin-left:3px;
+     padding-top:5px;
+     width:14%;
+     height:30px;
+     float:left;
+     display:block;
+     box-sizing:border-box;
+     text-align:center;
+     text-decoration:none;
+     font-weight:bold;
+     font-family:Arial, Helvetica, sans-serif; 
+     font-size:18px;
+     color:#FFFFFF;
+     background-color:darkgreen;
+     overflow:hidden;
+}
+
+nav a:hover { 
+    background-color:green;  
+    color:#FFFFFF;
+    height:30px;
+}
+
+section {
+    display:block;
+    position:absolute;
+    top:150px;
+    left:0px;
+    width:100%;
+    height:600px;
+    background: -webkit-linear-gradient(-45deg, white ,lightgray,white,lightgray,white,lightgray,white,lightgray,white,lightgray,white,lightgray,white,lightgray,white,lightgray,white,lightgray,white,lightgray,white,lightgray,white,lightgray);
+    background: linear-gradient(to -45deg, white,lightgray,white,lightgray,white,lightgray,white,lightgray,white,lightgray,white,lightgray,white,lightgray,white,lightgray,white,lightgray,white,lightgray,white,lightgray,white,lightgray);
+  
+    clear:both;    
+    box-sizing:border-box;
+    overflow:hidden;   
+}
+
+
+#form_content {
+    margin: 40px 40px 40px 30%; 
+    font-size:17px;
+}
+
+h2{ 
+     position:relative; 
+     font-weight:bold; 
+     white-space:nowrap; 
+     color:#900000; 
+     text-shadow: 1px 2px 3px gold;
+     overflow:hidden;
+}
+  
+input, button { 
+      background-color:gold;
+}
+input[type="radio"], input[type="checkbox"], input[type="file"] {
+     border:1px solid gold;
+     background-color:gold;
+}
+
+#byte_content {
+     position:relative;
+     float:right;
+     margin: 100px 5px 100px 5px;
+     width: 20%;
+     height:auto;
+     color:#900000;
+     background-color:gold;
+}
+
+#Mchoice {
+     background-color:gold;
+}
+ 
+div > h4{ 
+     position:relative;
+     text-align:left; 
+     color:#A00000; 
+     font: bold normal 16px Georgia, "Times New Roman", Times, serif;
+     text-shadow: 1px 1px 1px gold;
+}
+ 
+section > h3 { 
+    position:absolute;
+    bottom:60px;
+    left:30px;
+    font-weight:bold; 
+    font-size:24px;
+    font-family: Arial, Helvetica, sans-serif; 
+    letter-spacing:-1px; 
+    text-align:center; 
+    color:#FFF;
+    background-color:lightsalmon;
+    -webkit-transform: matrix(1,0.5,0,1,0,0 );
+    transform:matrix(1,0.5,0,1,0,0 );
+} 
+
+footer > p { 
+     position:absolute;
+     top:750px;
+     color:darkgreen;
+     font:15px Arial, Helvetica, sans-serif; 
+}
+/* @copyright Wendy Xiao Demo Web Page Oct, 2015 */

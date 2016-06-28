@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="./source/formPage.css"> 
+<script src="./source/init.js"></script>
+<script src="./source/formPage.js"></script>
+</head>
+<body onload="init()">
+  
+<header>
+  <H1>My Demonstrated Web Page </H1>
+     <nav>
+        <a href="../demo3All.html">HOME</a>
+        <a href="../audioPage/audioPage.html">AUDIO</a>
+        <a href="../animatPage/animatPage.html">ANIMATION</a>
+        <a href="../videoPage/videoPage.html">VIDEO</a>
+        <a href="../photoPage/photoPage.html">PHOTO</a>
+        <a href="./formPage.html" style="background-color:green">FORM</a>
+        <a href="../about/about.html">ABOUT</a>
+    </nav> 
+</header>
+
+<section>
+    <div id="form_content">
+      <h2>Example Survery Form</h2>    
+        <form name="myForm">
+            Test Name: <input type="text" id="textBox" name="fname" title="text input sample">
+        </form> 
+        <form id="sexForm">
+            Male:<input type="radio" name="sex" value="male">
+            Female:<input type="radio" name="sex" value="female">
+        </form>
+        <br>
+        <form id="personForm">
+            Multiple choice...
+            <br>
+            <select id="Mchoice" name="Mchoice">
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+                <option value="Divorced">Divorced</option>
+                <option value="Widowed">Widowed</option>
+                <option value="Separated">Separated</option>
+            </select>
+        </form>
+       
+        <h4>What are some of your interests (select all that apply)?</h4>
+        
+        <form id="styleForm" name="styleForm" method="post">
+            A. watching movies together. <input type="checkbox" id="checkStyle0" value="watching movies together">
+            <br>
+            B. hiking or play sports together. <input type="checkbox" id="checkStyle1" value="hiking or play sports">
+            <br>
+            C. traveling together. <input type="checkbox" id="checkStyle2" value="traveling">
+            <br> 
+            D. eating together. <input type="checkbox" id="checkStyle3" value="eating" checked="checked">
+            <br /> 
+            <button id="allText" onClick="ResultFun()">Test Result</button>
+        </form>
+ 
+        <h4>Upload a file</h4>
+        <form id="myfiles" enctype="multipart/form-data" method="post">
+            <p>
+                File Description:<br>
+                <input type="text" name="textline" size="30" placeholder="your file name">
+            </p>
+            <p>
+                Please specify a file, or a set of files:<br>
+                <input type="file" name="datafile" size="20">
+            </p>
+            <div>
+                <input type="submit" value="Test Send">
+            </div>
+        </form>
+    </div> 
+    <h3><b>Available Now!</b></h3>
+</section>
+  
+<footer>
+  <p>@copyright Wendy Xiao Oct, 2015 Demo Web Page</p>
+</footer>
+ 
+</body>
+</html>
+ 

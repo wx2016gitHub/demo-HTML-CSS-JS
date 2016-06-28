@@ -1,0 +1,275 @@
+body{ 
+    width:100%;
+    height:100%;   
+    background-image: -webkit-radial-gradient(circle, antiquewhite, white );
+    background-image: radial-gradient(circle, antiquewhite, white );
+}
+ 
+header {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:150px; 
+    box-sizing:border-box;
+}
+
+header > h1 {
+    padding-top:10px;
+    text-align:center;  
+    font-family:Arial, Helvetica, sans-serif; 
+    font-weight:bold;  
+    color:darkgreen;
+    text-shadow: 1px 2px 3px gold;
+    white-space:nowrap; 
+    overflow:hidden;
+}
+
+header > nav {
+    position:absolute;
+    top:120px; 
+    left:0px;
+    width:100%;
+    height:30px;
+    background-color:darkgreen;
+    box-sizing:border-box;
+}
+
+nav > a{
+     position:relative;
+     margin-left:3px;
+     padding-top:5px;
+     width:14%;
+     height:30px;
+     float:left;
+     display:block;
+     box-sizing:border-box;
+     text-align:center;
+     text-decoration:none;
+     font-weight:bold;
+     font-family:Arial, Helvetica, sans-serif; 
+     font-size:18px;
+     color:#FFFFFF;
+     background-color:darkgreen;
+     overflow:hidden;
+}
+
+nav a:hover { 
+    background-color:green;  
+    color:#FFFFFF;
+    height:30px;
+}
+
+section {
+    display:block;
+    position:absolute;
+    top:150px;
+    left:0px;
+    width:100%;
+    height:600px;
+    background: -webkit-linear-gradient(top, lightblue, white, GreenYellow);
+    background: linear-gradient(to bottom, lightblue, white, GreenYellow);
+    clear:both;
+    box-sizing:border-box;
+    overflow:hidden; 
+}
+
+section > h2{ 
+    position:relative; 
+    margin-left:27%; 
+    color:#900000;  
+    font-size:32px; 
+    font-weight:bold; 
+    text-shadow: 3px 3px 3px #FFFFFF; 
+    white-space:nowrap; 
+    overflow:hidden;  
+}
+
+section > P{ 
+    position:relative; 
+    padding:0px 0px 40px 225px; 
+    color:rgb(111,115,19); 
+    font: bold normal 12px Georgia, "Times New Roman", Times, serif;
+}
+  
+section > h3 { 
+    position:absolute;
+    bottom:60px;
+    left:30px;
+    font-weight:bold; 
+    font-size:24px;
+    font-family: Arial, Helvetica, sans-serif; 
+    letter-spacing:-1px; 
+    text-align:center; 
+    color:gold;
+    background-color:green;
+    -webkit-transform: matrix(1,0.5,0,1,0,0 );
+    transform:matrix(1,0.5,0,1,0,0 );
+} 
+
+#myCanvas { 
+    position:relative; 
+    top:-70px; 
+    left:0px;
+}
+
+#myCanvaText { 
+    position:relative; 
+    top: 0px; 
+    left: -400px;   
+}
+
+#myCanvaC { 
+    position:relative; 
+    float:right; 
+    top: -320px;  
+    right:21%;   
+}
+ 
+#MyAnimation { 
+    position:relative; 
+    width:750px; 
+    height:150px; 
+    top:150px; 
+    left:200px;
+}
+ 
+#Animat1, #Animat2 { 
+    position: absolute;
+    bottom: 30px;
+    width:100px;
+    height:100px; 
+    margin:5px;
+    text-align:center;
+    border:2px solid gray;
+    box-sizing: border-box;  
+}
+
+#Animat1 { 
+    left: 10px; 
+    background: -webkit-linear-gradient(45deg, yellow, white, red);
+    background: linear-gradient(45deg, yellow, white, red);
+}
+
+#Animat2 { 
+    left: 600px; 
+    background: -webkit-repeating-radial-gradient(65% 25%, lightgray, LemonChiffon 5%, GreenYellow 7%); 
+    background: repeating-radial-gradient(65% 25%, lightgray, LemonChiffon 5%, GreenYellow 7%); 
+}
+
+#backText { 
+    font-size:16px; 
+    color: #AAA; 
+    text-shadow: 1px 1px 1px #990033; 
+}
+
+#imgfront1, #imgfront2 { 
+    position: absolute; 
+    width:100%; 
+    height:100%; 
+    bottom: 30px; 
+}
+
+
+div:hover #imgfront1 { 
+    -webkit-animation: wxTesthF 5s linear infinite alternate;  
+    animation: wxTesthF 5s linear infinite alternate; 
+}
+
+@-webkit-keyframes wxTesthF {
+    0%   {  -webkit-transform:rotateY( 0deg);  opacity:1 ;}
+    100% {  -webkit-transform:rotateY(180deg); opacity:0 ; }
+}
+@keyframes wxTesthF {
+    0%   {  transform:rotateY( 0deg);  opacity:1 ;}
+    100% {  transform:rotateY(180deg); opacity:0 ; }
+}
+
+div:hover #imgback1  { 
+    -webkit-animation: wxTestB 5s linear infinite alternate; 
+    animation: wxTestB 5s linear infinite alternate;
+}
+
+@-webkit-keyframes wxTestB {
+    0%   {  -webkit-transform:rotateY( 0deg);  opacity:0 ;} 
+    100% {  -webkit-transform:rotateY(180deg); opacity:1; }
+}
+
+@keyframes wxTestB {
+    0%   {  transform:rotateY( 0deg);  opacity:0 ;} 
+    100% {  transform:rotateY(180deg); opacity:1; }
+}
+
+#imgback1, #imgback2 {        
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width:60px;
+    height:60px;
+    box-sizing: border-box;
+    text-align:center;
+    background-clip: content-box;
+           
+} 
+
+#imgback1 { 
+    background-color: lightpink;
+}
+ 
+#imgfront1, #imgfront2 {
+    position: absolute;
+    width:60px;
+    height:60px;
+    background-image: url(../../demoImg/peacock2.jpg);
+    bottom: 20px;
+    left: 20px;
+    -webkit-animation: mymove  5s linear infinite;  
+    animation: mymove  5s linear infinite;
+}
+
+@-webkit-keyframes mymove  { 
+    0% { -webkit-transform: rotate(0deg);} 
+    100% { -webkit-transform: rotate(360deg);} 
+}
+
+@keyframes mymove  { 
+    0% { transform: rotate(0deg);} 
+    100% { transform: rotate(360deg);}
+}
+
+#imgfront2 { 
+    border-radius: 50%; 
+}
+
+#myText  { 
+    position:absolute;  
+    bottom:-40px;  
+    font-size:0.5em;
+}
+
+
+#imgfront2:hover {
+     -webkit-animation: wxTestC 5s linear infinite alternate; 
+     animation: wxTestC 5s linear infinite alternate;
+}
+
+@-webkit-keyframes wxTestC {
+    0%   {  -webkit-transform:rotateX( 0deg);  opacity:0 ;} 
+    100% {  -webkit-transform:rotateX(180deg); opacity:1; }
+}
+
+@keyframes wxTestC {
+    0%   {  transform:rotateX( 0deg);  opacity:0 ;} 
+    100% {  transform:rotateX(180deg); opacity:1; }
+}
+
+#mySVG1 { position:absolute; bottom:30px; left:200px; }
+#mySVG2 { position: absolute; bottom:30px; left:400px; } 
+ 
+footer > p {
+     position:absolute;
+     top:750px;
+     color:darkgreen;
+     font:15px Arial, Helvetica, sans-serif; 
+}
+/* @copyright Wendy Xiao Demo Web Page Oct, 2015*/

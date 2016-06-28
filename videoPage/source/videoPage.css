@@ -1,0 +1,175 @@
+body{
+    width:100%;
+    height:100%;   
+    background-image: -webkit-radial-gradient(circle, antiquewhite, white );
+    background-image: radial-gradient(circle, antiquewhite, white );
+}
+  
+header {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:150px; 
+    box-sizing:border-box;
+}
+ 
+header > h1 {
+    padding-top:10px;
+    text-align:center;  
+    font-family:Arial, Helvetica, sans-serif; 
+    font-weight:bold;  
+    color:darkgreen;
+    text-shadow: 1px 2px 3px gold;
+    white-space:nowrap; 
+    overflow:hidden;
+}
+
+header > nav {
+    position:absolute;
+    top:120px; 
+    left:0px;
+    width:100%;
+    height:30px;
+    background-color:darkgreen;
+    box-sizing:border-box;       
+}
+
+nav > a {
+     position:relative;
+     margin-left:3px;
+     padding-top:5px;
+     width:14%;
+     height:30px;
+     float:left;
+     display:block;
+     box-sizing:border-box;
+     text-align:center;
+     text-decoration:none;
+     font-weight:bold;
+     font-family:Arial, Helvetica, sans-serif; 
+     font-size:18px;
+     color:#FFFFFF;
+     background-color:darkgreen;
+     overflow:hidden;
+}
+
+nav a:hover { 
+    background-color:green;  
+    color:#FFFFFF;
+    height:30px;
+}
+
+section {
+    display:block;
+    position:absolute;
+    top:150px;
+    left:0px;
+    width:100%;
+    height:600px;
+    background: -webkit-linear-gradient(bottom,steelblue,lightcyan, white) ;
+    background: linear-gradient( to top,steelblue, lightcyan, white) ;
+    clear:both; 
+    overflow:hidden; 
+}
+ 
+section > h2{ 
+    position:absolute; 
+    margin: 50px  30px 10px 50px;
+    color:#900000; 
+    padding-left: 50px; 
+    font-size:32px; 
+    font-weight:bold; 
+    text-shadow: 3px 3px 3px #FFFFFF;
+    white-space:nowrap;
+    overflow:hidden; 
+}
+ 
+#pinp1 { 
+    position:absolute; 
+    margin:  0px  0px 10px 0px;
+    top: 173px; 
+    left:50px; 
+    width:300px; 
+    color:#900000; 
+    background-color:gold; 
+    font-weight:bold;
+    font-size:16px;
+} 
+#pinp2 { 
+    position:absolute; 
+    margin:  0px  0px 10px 0px;
+    top: 273px; 
+    left:50px; 
+    width:300px; 
+    color:#900000; 
+    background-color:gold;
+    font-weight:bold;
+    font-size:16px;
+}   
+
+#videoSize{ 
+    position:absolute; 
+    margin:10px 10px 10px 0px;
+    width:300px;
+    top:200px; 
+    left:50px; 
+}
+
+#videoTime { 
+    position:absolute; 
+    margin:10px 10px 10px 0px;
+    width:300px;  
+    top:300px; 
+    left:50px;
+}
+#theVideo  { 
+    position:relative; 
+    margin:  0px 5px 5px 0px; 
+    top: 70px; 
+    left: 500px;
+} 
+#progressBar {
+    position:relative; 
+    top:40px;
+    left:500px;
+    width:480px;
+    height:30px;
+    color:green;
+    visibility:hidden;
+}
+
+div > button { 
+    position:absolute;  
+    width:150px; 
+    height:30px;  
+    margin:-110px 10px 50px 50px; 
+    top: 500px; 
+    left: 150px; 
+    background-color:gold;
+    color:#900000; 
+    font-weight:bold;
+} 
+ 
+section > h3 { 
+    position:absolute;
+    bottom:60px;
+    left:30px;
+    font-weight:bold; 
+    font-size:24px;
+    font-family: Arial, Helvetica, sans-serif; 
+    letter-spacing:-1px; 
+    text-align:center; 
+    color:red;
+    background-color:lightcyan;
+    -webkit-transform: matrix(1,0.5,0,1,0,0 );
+    transform:matrix(1,0.5,0,1,0,0 );
+} 
+
+footer > p { 
+     position:absolute;
+     top:750px;
+     color:darkgreen;
+     font:15px Arial, Helvetica, sans-serif; 
+}
+/*@copyright Wendy Xiao Demo Web Page Oct, 2015   */

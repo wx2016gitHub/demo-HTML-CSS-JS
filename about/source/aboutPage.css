@@ -1,0 +1,164 @@
+body{ 
+    width:100%;
+    height:100%;   
+    background-image: -webkit-radial-gradient(circle, antiquewhite, white );
+    background-image: radial-gradient(circle, antiquewhite, white );
+}
+ 
+header {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:150px; 
+    box-sizing:border-box;
+}
+
+header > h1 {
+    padding-top:10px;
+    text-align:center;  
+    font-family:Arial, Helvetica, sans-serif; 
+    font-weight:bold;  
+    color:darkgreen;
+    text-shadow: 1px 2px 3px gold;
+    white-space:nowrap; 
+    overflow:hidden;
+}
+
+header > nav {
+    position:absolute;
+    top:120px; 
+    left:0px;
+    width:100%;
+    height:30px;
+    background-color:darkgreen;
+    box-sizing:border-box;
+}
+
+nav > a {
+     position:relative;
+     margin-left:3px;
+     padding-top:5px;
+     width:14%;
+     height:30px;
+     float:left;
+     display:block;
+     box-sizing:border-box;
+     text-align:center;
+     text-decoration:none;
+     font-weight:bold;
+     font-family:Arial, Helvetica, sans-serif; 
+     font-size:18px;
+     color:#FFFFFF;
+     background-color:darkgreen;
+     overflow:hidden;
+}
+
+nav a:hover { 
+    background-color:green;  
+    color:#FFFFFF;
+    height:30px;
+}
+
+section {
+    display:block;
+    position:absolute;
+    top:150px;
+    left:0px;
+    width:100%;
+    height:600px;
+    background: -webkit-linear-gradient(bottom, rgb(255,216,0),lightyellow,  white) ;
+    background: linear-gradient( to top, rgb(255,216,0),lightyellow,white) ;
+    clear:both; 
+    box-sizing:border-box;
+    overflow:hidden; 
+}
+ 
+section > h2 { 
+    position:relative;
+    padding-top:20px;
+    text-align:center; 
+    color:rgb(0,99,0);
+    font-family:Arial, Helvetica, sans-serif; 
+    font-weight:bold; 
+    white-space:nowrap; 
+}
+
+section > h3 { 
+    position:absolute;
+    bottom:60px;
+    left:30px;
+    font-weight:bold; 
+    font-size:24px;
+    font-family: Arial, Helvetica, sans-serif; 
+    letter-spacing:-1px; 
+    text-align:center; 
+    color:#FFF;
+    background-color:hotpink;
+    -webkit-transform: matrix(1,0.5,0,1,0,0 );
+    transform:matrix(1,0.5,0,1,0,0 );
+} 
+
+section > article { 
+    position:relative;
+    top:0px;
+    left:5%;
+    padding:70px 110px;
+    width:90%;
+    height:600px;
+    text-align:justify;
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;  
+    color:#600000; 
+    box-sizing:border-box;
+    line-height:normal;
+}
+
+article > span {
+    color:rgb(0,55,0);
+}
+
+section > img {
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    opacity:0.5;
+}
+ 
+#myPeacock{
+    position:absolute;
+    width: 60px;
+    height: 60px;
+    border-radius:30px; 
+    top:50px;
+    left: 5px;    
+    background-image: url(../../demoImg/peacock1.jpg);
+    -webkit-animation: myfirst 11s infinite;  
+    animation: myfirst 11s infinite;
+}
+@-webkit-keyframes myfirst {
+    0%   { background-image: url(../../demoImg/peacock1.jpg); left: 50px; top: 80px; }
+    25%  { background-image: url(../../demoImg/peacock1.jpg); left: 92%;  top: 80px; }
+    50%  { background-image: url(../../demoImg/peacock1.jpg); left: 92%;  top: 500px;}
+    75%  { background-image: url(../../demoImg/peacock1.jpg); left: 50px; top: 500px;}
+    100% { background-image: url(../../demoImg/peacock1.jpg); left: 50px; top: 60px; }
+}
+@keyframes myfirst {
+    0%   {background-image: url(../../demoImg/peacock1.jpg); left: 50px; top: 80px; }
+    25%  {background-image: url(../../demoImg/peacock1.jpg); left: 92%;  top: 80px; }
+    50%  {background-image: url(../../demoImg/peacock1.jpg); left: 92%;  top: 500px;}
+    75%  {background-image: url(../../demoImg/peacock1.jpg); left: 50px; top: 500px;}
+    100% {background-image: url(../../demoImg/peacock1.jpg); left: 50px; top: 80px; }
+}
+audio:not([controls]){
+    display:none;
+    height:0;
+}
+
+footer > p {
+     position:absolute;
+     top:750px;
+     color:darkgreen;
+     font:15px Arial, Helvetica, sans-serif; 
+}
+/* @copyright Wendy Xiao Demo Web Page Oct, 2015 */
