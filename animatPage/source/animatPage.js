@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', domloaded,false);
        // Fill with gradient
        ctxText.fillStyle = grd;
        ctxText.fillText("Example of Canvas", 20, 50);
-
+ 
        var canvasSun  = document.getElementById("myCanvaC");
        var ctxSun = canvasSun.getContext("2d");
        var position = 0;

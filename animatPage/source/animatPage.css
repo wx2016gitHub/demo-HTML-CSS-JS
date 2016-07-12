@@ -114,15 +114,15 @@ section > h3 {
 }
 
 #myCanvaText { 
-    position:relative; 
-    top: 0px; 
-    left: -400px;   
+    position:absolute; 
+    top: 200px; 
+    left: 25%;   
 }
 
 #myCanvaC { 
-    position:relative; 
+    position:absolute;
     float:right; 
-    top: -320px;  
+    top: -90px;  
     right:21%;   
 }
  
@@ -265,7 +265,15 @@ div:hover #imgback1  {
 
 #mySVG1 { position:absolute; bottom:30px; left:200px; }
 #mySVG2 { position: absolute; bottom:30px; left:400px; } 
- 
+
+#comet {  position:absolute;
+             top:40px;
+             left:10px;
+             -webkit-transform: rotate(45deg);  
+             -ms-transform: rotate(45deg);  
+             transform: rotate(45deg);
+} 
+
 footer > p {
      position:absolute;
      top:750px;
