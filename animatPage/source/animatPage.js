@@ -84,17 +84,17 @@ document.addEventListener('DOMContentLoaded', domloaded,false);
 
        var canvasText = document.getElementById("myCanvaText");
        var ctxText = canvasText.getContext("2d");
-       ctxText.font = "20px STENCIL";
+       ctxText.font = "30px STENCIL";
        // Create gradient
        var grd = ctxText.createLinearGradient( 0,0,280,0 );
        grd.addColorStop(0,"blue");
        grd.addColorStop(0.3,"green");
        grd.addColorStop(0.6,"red");
-       grd.addColorStop(0.9,"yellow");
+       grd.addColorStop(0.9,"gold");
 
        // Fill with gradient
        ctxText.fillStyle = grd;
-       ctxText.fillText("Example of Canvas", 20, 50);
+       ctxText.fillText("Example of Canvas Text", 10, 50);
  
        var canvasSun  = document.getElementById("myCanvaC");
        var ctxSun = canvasSun.getContext("2d");

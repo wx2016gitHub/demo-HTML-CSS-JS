@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="./source/animatPage.css"> 
-<script src="./source/animatPage.js"></script> 
+<script src="./source/animatPage.js"></script>
 </head>
 <body>
 <header>
@@ -18,81 +18,78 @@
     </nav>
 </header> 
 <section>
-  <h2>Animation Demo</h2>
- 
-  <canvas id="myCanvas" width="1000px" height="150px"></canvas>
-  <canvas id="myCanvaC" width="300px" height="300px"></canvas>
-  <canvas id="myCanvaText" width="250px" height="60px"></canvas>
+    <h2>Animation Demo</h2>
+    <canvas id="myCanvas" width="1000px" height="150px"></canvas>
+    <canvas id="myCanvaC" width="300px" height="300px"></canvas>
+    <canvas id="myCanvaText" width="300px" height="60px"></canvas>
   
-  <div  id="MyAnimation">
-    <div id="Animat1"> 
-      <div id="imgback1"><p id="backText">Hover Test</p></div>
-      <div id="imgfront1"></div>
-    </div>
+    <div id="MyAnimation">
 
-    <div id="Animat2"> 
-       <div id="imgfront2"></div>
-    </div>
-
-    <div id="mySVG1">
-        
-      <div>
-      <svg width="100" height="100" viewBox="0 0 100 100" style="border:2px solid gray; background:rgb(199,255,255)">
-          
-          <defs>
-             <g id="myStar">
-                <polygon points="10,15 12,14 13,10 14,14 16,15 14,16 13,20 12,16 z "   fill="rgb(255,250,199)"  stroke="none">
-                  <animateTransform attributeName="transform" type="scale" from="1 1" to="2 2" begin="0s" dur="2s" repeatCount="indefinite" /  
-                </polygon>
-            </g>
-         </defs>
-         <use xlink:href="#myStar" x="0" y="0" />
-         <use xlink:href="#myStar" x="20" y="5" />
-         <use xlink:href="#myStar" x="40" y=" 1" />
-         <use xlink:href="#myStar" x="62" y="0" />
-         <use xlink:href="#myStar" x="5" y="20" />
-         <use xlink:href="#myStar" x="20" y="29" />
-         <use xlink:href="#myStar" x="40" y="21" />
-         <use xlink:href="#myStar" x="60" y="30" />
-         <use xlink:href="#myStar" x="2" y="45" />
-         <use xlink:href="#myStar" x="20" y="55" />
-         <use xlink:href="#myStar" x="40" y="49" />
-         <use xlink:href="#myStar" x="60" y="54" />
-         <use xlink:href="#myStar" x="15" y="62" />
-         <use xlink:href="#myStar" x="50" y="66" />
-         <path d="M90,7 c-25,0 -25,35 0,35 c-7,-7 -7,-30 0,-35" style="fill:rgb(250,250,250); stroke:none;  " />
-         <text x="15" y="15" style="fill:green; stroke:none; font-size:16px;" transform="translate(10)  rotate(45 0 0)" >SVG Animation</text>
- 
-      </svg>
+       <div id="Animat1"> 
+            <div id="imgback1"><p id="backText">Hover Test</p></div>
+            <div id="imgfront1"></div>
       </div>
- 
-      <div id="comet">
-          <svg width="9px" height="30px" viewBox="0 0 9 30" style="background:rgb(199,255,255)">
-               <path d="M0,0 q17,0 0,30 q10,-20 0,-30  z" fill="rgb(232,232,232)"/>  
-          </svg>
-     </div>
-    </div>
 
-    <div id="mySVG2">
-      <svg width="100" height="100" viewBox="0 0 100 100" style="border:2px solid gray; background:rgb(255,222,222) ">
-        <g stroke="gold" stroke-width="3" fill="red">
-           <path d="M20,32 a30,50  0 0 0 60, 0 c0,-20 -30,-20 -30,0  c0,-20 -30,-20 -30,0 z " />
-        </g>
-        <text x="15" y="15" style="fill:white; stroke:none; font-size:16px;" transform="translate(0,90)  rotate(-45 0 0)" >SVG Animation</text>
+      <div id="Animat2"> 
+           <div id="imgfront2"></div>
+      </div>
+
+      <div id="mySVG1"> 
+      <svg width="100" height="100" viewBox="0 0 100 100" style="border:2px solid gray; background:rgb(199,255,255)">
+           <defs>
+               <g id="myStar">
+                  <polygon points="10,15 12,14 13,10 14,14 16,15 14,16 13,20 12,16 z "   fill="rgb(255,250,199)"  stroke="none">
+                  <animateTransform attributeName="transform" type="scale" from="1 1" to="2 2" begin="0s" dur="2s" repeatCount="indefinite" /  
+                  </polygon>
+              </g>
+           </defs>
+           <use xlink:href="#myStar" x="0" y="0" />
+           <use xlink:href="#myStar" x="20" y="5" />
+           <use xlink:href="#myStar" x="40" y=" 1" />
+           <use xlink:href="#myStar" x="62" y="0" />
+           <use xlink:href="#myStar" x="5" y="20" />
+           <use xlink:href="#myStar" x="20" y="29" />
+           <use xlink:href="#myStar" x="40" y="21" />
+           <use xlink:href="#myStar" x="60" y="30" />
+           <use xlink:href="#myStar" x="2" y="45" />
+           <use xlink:href="#myStar" x="20" y="55" />
+           <use xlink:href="#myStar" x="40" y="49" />
+           <use xlink:href="#myStar" x="60" y="54" />
+           <use xlink:href="#myStar" x="15" y="62" />
+           <use xlink:href="#myStar" x="50" y="66" />
+           <path d="M90,7 c-25,0 -25,35 0,35 c-7,-7 -7,-30 0,-35" style="fill:rgb(250,250,250); stroke:none;  " />
+           <text x="15" y="15" style="fill:green; stroke:none; font-size:16px;" transform="translate(10)  rotate(45 0 0)" >SVG Animation</text>
       </svg>
-      <div id="myCircle"></div>
-    </div>
+           <div id="comet">
+                <svg width="11px" height="20px" viewBox="0 0 11 20" style="background-color:rgb(199,255,255)">
+                     <g> 
+                       <path d="M0,0 q25,0 0,20 q10,-20 0,-20  z" fill="#ccc"/>  
+                    </g>
+                </svg>
+           </div>
+      </div> 
+      <div id="mySVG2">
+      <svg width="100" height="100" viewBox="0 0 100 100" style="border:2px solid gray; background:rgb(255,222,222) ">
+           <g stroke="gold" stroke-width="3" fill="red">
+              <path d="M20,32 a30,50  0 0 0 60, 0 c0,-20 -30,-20 -30,0  c0,-20 -30,-20 -30,0 z " />
+           </g>
+           <text x="15" y="15" style="fill:white; stroke:none; font-size:16px;" transform="translate(0,90)  rotate(-45 0 0)" >SVG Animation</text>
+      </svg>
+           <div id="myCircle"></div>
+      </div>
+
   </div>
   <p id="myText">Move the cursor in or out the picture area to see the hover effect. </p>
   <h3><b>Available Now!</b></h3>
-
 </section>
    
 <footer>
   <p>@copyright Wendy Xiao Oct, 2015 Demo Web Page</p>
 </footer>
-<script src="./source/curveMotion.js"></script> 
-<script src="./source/ellipseMotion.js"></script> 
+ 
+<script src="./source/curveMotion.js"></script>  
+<script src="./source/ellipseMotion.js"></script>
+
 </body>
 </html>
  

@@ -267,11 +267,11 @@ div:hover #imgback1  {
 #mySVG2 { position: absolute; bottom:30px; left:400px; } 
 
 #comet {  position:absolute;
-             top:40px;
-             left:10px;
-             -webkit-transform: rotate(45deg);  
-             -ms-transform: rotate(45deg);  
-             transform: rotate(45deg);
+           top:40px;
+           left:10px;
+           -webkit-transform: rotate(30deg);  
+           -ms-transform: rotate(30deg);  
+           transform: rotate(30deg);
 } 
 
 footer > p {
