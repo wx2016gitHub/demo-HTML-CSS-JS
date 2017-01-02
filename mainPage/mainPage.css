@@ -68,7 +68,6 @@ section {
     width:100%;
     height:600px;
     background: url(../demoImg/simple.png) repeat;  
-  //  background: url(../demoImg/simple.png) repeat, url('wx2.jpg'); 92% 38% repeat;
     background-origin:border-box;
   
     clear:both;
